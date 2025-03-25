@@ -1,0 +1,6 @@
+--target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c
+-gdwarf-4 -I ../../libraries/components/eiq/tensorflow-lite/model -I ../../libraries/sdk_drivers
+-IC:/Users/86152/AppData/Local/Arm/Packs/NXP/MCXN947_DFP/17.0.0/devices/MCXN947
+-IC:/Users/86152/AppData/Local/Arm/Packs/NXP/MCXN947_DFP/17.0.0
+-D__UVISION_VERSION=538 -DCPU_MCXN947VDF_cm33_core0 -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DKEIL -DDEBUG
+-o ./objects/startup_mcxn947_cm33_core0.o "../../libraries/sdk_drivers/startup_MCXN947_cm33_core0.S"
